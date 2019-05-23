@@ -8,5 +8,7 @@ export default class Weather {
     // You should probably convert the temperature data to either F or C
     this.city = data.name
     this.kelvin = data.main.temp
+    this.fahrenheit = data.main.temp
+    this.celsius = data.main.temp
   }
 }
