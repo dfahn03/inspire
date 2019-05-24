@@ -1,3 +1,7 @@
+body {
+  user-select: none;
+}
+
 #todo-error{
   color: red;
   font-size: 2em;
@@ -9,6 +13,16 @@
   background-position: center;
   background-size: cover;
 }
-.quotes {
-  background-color: rgba(255, 255, 255, 0.514);
+#todos {
+  background-color: rgb(255, 255, 255);
 }
+.strike {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+/* .checkboxes {
+  background: transparent;
+} */
+/* .quotes {
+  background-color: rgba(255, 255, 255, 0.514);
+} */
