@@ -13,8 +13,12 @@ body {
   background-position: center;
   background-size: cover;
 }
-#todos {
-  background-color: rgb(255, 255, 255);
+#weather {
+  background-color: #fff;
+}
+.to-do {
+  color: #fff;
+  background-color: rgb(0, 0, 0);
 }
 .strike {
   text-decoration: line-through;

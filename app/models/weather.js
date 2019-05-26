@@ -10,5 +10,14 @@ export default class Weather {
     this.kelvin = data.main.temp
     this.fahrenheit = data.main.temp
     this.celsius = data.main.temp
+    this.icon = data.weather.icon + '.' + 'png'
+  }
+
+  get Template() {
+    return `
+    <img src="${this.icon}" alt="Weather Icon">
+    <p>${this.city}</p>
+    <p>${this.fahrenheit}</p>
+    `
   }
 }

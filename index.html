@@ -16,8 +16,10 @@
 <body id="bg-image">
 
 	<header class="container-fluid">
-		<div id="weather">
-			Your Weather Template
+		<div class="row">
+			<div class="col-12 offest-col-sm-2" id="weather">
+
+			</div>
 		</div>
 	</header>
 
@@ -27,7 +29,7 @@
 		<div class="row">
 			<div class="col-9" id="quote"></div>
 			<div class="col-3">
-				<div class="row">
+				<div class="row to-do">
 					<div class="col-12" id="todo-error"></div>
 					<div class="col-12" id="todos"></div>
 					<form class="col-12" id="form-content" onsubmit="app.controllers.todoController.addTodo(event)"></form>
