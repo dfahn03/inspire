@@ -46,7 +46,6 @@ export default class TodoController {
 	addTodo(e) {
 		e.preventDefault()
 		let form = e.target
-		debugger
 		let todo = {
 			description: form.description.value
 		}
@@ -59,7 +58,6 @@ export default class TodoController {
 	}
 
 	removeTodo(todoId) {
-		// ask the service to run the remove todo with this id
 		_todoService.removeTodo(todoId)
 	}
 

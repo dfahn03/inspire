@@ -16,7 +16,7 @@ export default class ToDo {
 				</div>
 			</div>
       <p class="d-flex justify-content-center align-items-center ml-1 mt-3 ${this.completed ? 'strike' : ""}">${this.description}</p>
-      <i class="far fa-trash-alt d-flex justify-content-center align-items-center ml-2" onclick="app.controllers.todoController.removeTodo(${this._id})"></i>
+      <i class="far fa-trash-alt d-flex justify-content-center align-items-center ml-2" onclick="app.controllers.todoController.removeTodo('${this._id}')"></i>
 		</div>
     `
   }
