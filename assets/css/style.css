@@ -14,7 +14,26 @@ body {
   background-size: cover;
 }
 #weather {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.418);
+}
+.greeting {
+  font-size: 80px;
+}
+#quote {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.719);
+  font-style: italic;
+  padding-top: 30px;
+  border-radius: 100px;
+}
+.jumbotron {
+  max-height: 30vh;
+}
+.display-4 {
+  font-size: 2rem;
+}
+.lead {
+  font-size: 1.5rem;
 }
 .to-do {
   color: #fff;
@@ -24,9 +43,7 @@ body {
   text-decoration: line-through;
   text-decoration-color: red;
 }
-/* .checkboxes {
+.checks {
   background: transparent;
-} */
-/* .quotes {
-  background-color: rgba(255, 255, 255, 0.514);
-} */
+  border: none;
+}

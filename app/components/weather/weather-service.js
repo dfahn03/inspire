@@ -1,8 +1,7 @@
 import Weather from "../../models/Weather.js";
 
 //PRIVATE
-// @ts-ignore
-const _weatherApi = axios.create({
+let _weatherApi = axios.create({
 	baseURL: "//bcw-sandbox.herokuapp.com/api/weather",
 	timeout: 3000
 });

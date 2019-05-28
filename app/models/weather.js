@@ -1,23 +1,18 @@
 export default class Weather {
   constructor(data) {
-    console.log('[RAW WEATHER API DATA]', data);
-
-    // HEY FUN FACT 
-    // Have you ever wanted to know the temperature measured in kelvin? That is what this data returns!
-    // data.main.temp is the temperature in Kelvin
-    // You should probably convert the temperature data to either F or C
     this.city = data.name
     this.kelvin = data.main.temp
-    this.fahrenheit = data.main.temp
-    this.celsius = data.main.temp
-    this.icon = data.weather.icon + '.' + 'png'
+    this.fahrenheit = ((data.main.temp - 273.15) * 1.8) + 32
+    this.celsius = data.main.temp - 273.15
+    this.icon = 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.' + 'png'
   }
 
   get Template() {
     return `
-    <img src="${this.icon}" alt="Weather Icon">
-    <p>${this.city}</p>
-    <p>${this.fahrenheit}</p>
+    <img src="${this.icon}" alt="Weather Icon" class="my-1 d-flex justify-content-center align-items-center">
+    <p class="my-1 d-flex justify-content-center align-items-center">${this.city}</p>
+    <p class="my-1 d-flex justify-content-center align-items-center">${this.fahrenheit.toFixed(0)}°F</p>
+    <p class="my-1 d-flex justify-content-center align-items-center">${this.celsius.toFixed(0)}°C</p>
     `
   }
 }

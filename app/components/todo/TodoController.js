@@ -16,7 +16,7 @@ function _drawTodoForm() {
 	document.querySelector('#form-content').innerHTML = `
 	<div class="form-group">
 		<div class="input-group mb-3">
-			<input type="text" class="form-control" name="description" placeholder="What Shall You Do" required>
+			<input type="text" class="form-control" name="description" placeholder="Your ToDo" required>
 			<div class="input-group-append">
 				<button class="btn btn-success" type="submit">Add ToDo</button>
 			</div>

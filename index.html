@@ -17,19 +17,26 @@
 
 	<header class="container-fluid">
 		<div class="row">
-			<div class="col-12 offest-col-sm-2" id="weather">
-
-			</div>
+			<div class="col-md-1 offset-md-11" id="weather"></div>
 		</div>
 	</header>
 
-	<main class="container"></main>
+	<main class="container">
+		<div class="row">
+			<div class="col-12 d-flex justify-content-center align-items-center mt-5">
+				<h1 class="greeting text-primary"><b>Hello ______!</b></h1>
+			</div>
+		</div>
+	</main>
 
-	<footer class="conatiner-fluid">
+	<footer class="conatiner-fluid navbar fixed-bottom">
 		<div class="row">
 			<div class="col-9" id="quote"></div>
 			<div class="col-3">
 				<div class="row to-do">
+					<div class="col-12">
+						<h6>What Shall You Do:</h6>
+					</div>
 					<div class="col-12" id="todo-error"></div>
 					<div class="col-12" id="todos"></div>
 					<form class="col-12" id="form-content" onsubmit="app.controllers.todoController.addTodo(event)"></form>
